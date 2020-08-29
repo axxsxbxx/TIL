@@ -11,7 +11,7 @@ Command Line Interface
 
 
 
-# 1. 기초 명령어
+## 1. 기초 명령어
 
 ### 1) `pwd`
 

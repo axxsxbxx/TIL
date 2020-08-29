@@ -1,7 +1,13 @@
 <!-- ![logo](_media/icon.svg) -->
 
-# TIL
+# Subin | TIL
 > Today I Learned
 
 [GitHub](https://www.github.com/axxsxbxx/)
-[Get Started](#Headline)
+[TIL](#TIL)
+
+<!-- background image -->
+<!-- ![](_media/bg.png) -->
+
+<!-- background color -->
+<!-- ![color](#f0f0f0) -->
