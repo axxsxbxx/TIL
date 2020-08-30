@@ -4,7 +4,7 @@
 > Today I Learned
 
 [GitHub](https://www.github.com/axxsxbxx/)
-[TIL](#TIL)
+[TIL](#📝TIL)
 
 <!-- background image -->
 <!-- ![](_media/bg.png) -->
