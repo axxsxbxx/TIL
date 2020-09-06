@@ -160,7 +160,7 @@ dmypy.json
 
 ## 2. 프로젝트 사항 변경
 
-### 1) `settings.py` 내용 변경
+### 1) `settings.py` 내용 변경 <!-- {docsify-ignore} -->
 
 - 프로젝트 `settings.py` 내용 중 해당되는 부분의 코드를 아래처럼 변경해줌
 
@@ -173,14 +173,14 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-### 2) `static` 폴더 생성
+### 2) `static` 폴더 생성 <!-- {docsify-ignore} -->
 
 - 상위 폴더에 빈 `static` 폴더 생성
   - `pythonanywhere`에서 정적 파일 모을 때 사용하는 용도
 
 
 
-## 3. `requirements.txt` 파일
+## 3. `requirements.txt` 파일 
 
 - 파이썬 모듈과 버전을 유지할 수 있는 파일을 생성하는 과정
 - 파이참의 터미널 창에서 아래 명령에 수행
@@ -278,7 +278,7 @@ $ pip install django
 
 
 
-### 1) 가상환경 설정
+### 1) 가상환경 설정 <!-- {docsify-ignore} -->
 
 - `Virtualenv:` 부분에 가서 가상환경 경로를 입력함
 - /home/[파이썬애니웨어 아이디]/.virtualenvs/[가상환경 이름]
@@ -286,7 +286,7 @@ $ pip install django
 
 
 
-### 2) 정적 파일 매핑하기
+### 2) 정적 파일 매핑하기 <!-- {docsify-ignore} -->
 
 - `Static files:` 부분에 가서 정적파일 경로 입력하기
 
@@ -298,7 +298,7 @@ $ pip install django
 
 
 
-### 3) WSGI 파일 설정하기
+### 3) WSGI 파일 설정하기 <!-- {docsify-ignore} -->
 
 - `Code:` 부분의 `WSGI configuration file`로 지정되어 있는 파일을 클릭해서 에디터를 실행
 - 모든 내용을 지우고 아래의 내용으로 변경함
