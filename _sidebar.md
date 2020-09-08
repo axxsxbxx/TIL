@@ -2,6 +2,9 @@
 
 * R
     - [벡터](R/200907_vector.md)
+    - [팩터](R/200908_factor.md)
+    - [행열&배열](R/200908_matrix.md)
+    - [데이터프레임](R/200908_dataframe.md)
 
 * git / github
     - [마크다운](git/00_markdown_basic.md)
