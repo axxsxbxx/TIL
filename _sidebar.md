@@ -11,6 +11,7 @@
     - [함수](R/200910_function.md)
     - [기타](R/200909_etc.md)
     - **웹 크롤링**
+    - [CSS 선택자](R/200914_CSS_selector.md)
 
 
 - git / github
