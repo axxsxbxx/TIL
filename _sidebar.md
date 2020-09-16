@@ -13,6 +13,8 @@
     - **웹 크롤링**
     - [CSS 선택자](R/200914_CSS_selector.md)
     - [패키지](R/200915_package.md)
+    - [정적 크롤링](R/200916_static_crawling.md)
+    - [영화 댓글 크롤링](R/200916_daummovie.md)
 
 
 - git / github
