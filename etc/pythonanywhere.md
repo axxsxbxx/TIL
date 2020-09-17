@@ -295,6 +295,12 @@ $ pip install django
 - 그 옆의 `Enter path`라는 빨간색 텍스트를 클릭하고 
 
   `/home/[파이썬애니웨어 아이디]/[클론받은 프로젝트 있는 폴더 이름]/static` 을 입력함
+  
+- `Enter URL` 이라는 빨간색 텍스트를 클릭하고 `/media/`을 입력함
+
+- 그 옆의 `Enter path`라는 빨간색 텍스트를 클릭하고 
+
+  `/home/[파이썬애니웨어 아이디]/[클론받은 프로젝트 있는 폴더 이름]` 을 입력함
 
 
 
@@ -312,13 +318,12 @@ path = '/home/[파이썬애니웨어 아이디]/[클론받은 프로젝트 있�
 if path not in sys.path:
     sys.path.append(path)
 
-from django.contrib.staticfiles.handlers import StaticFilesHandler
 from django.core.wsgi import get_wsgi_application
 
 os.environ['DJANGO_SETTINGS_MODULE'] = '[프로젝트이름].settings'
 # 대부분 프로젝트 이름이지만 헷갈린다면 프로젝트의 wsgi.py 내용을 복사해서 붙여넣은 다음
 # 변경해야할 부분 변경해주면 됨
-application = StaticFilesHandler(get_wsgi_application())
+application = get_wsgi_application()
 ```
 
 - 내용을 변경한 후 `save`를 클릭하고 `Web` 탭으로 돌아감
