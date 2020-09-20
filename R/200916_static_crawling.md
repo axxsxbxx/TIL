@@ -29,3 +29,35 @@ html_text(x, trim=FALSE)
 html_attrs(x)
 html_attr(x, name, default="")
 ```
+
+
+
+## 3. `XML` 패키지의 주요 함수
+
+```R
+# 응답 객체 변환
+htmlParse(file, encoding="UTF-8/CP949")
+
+# 데이터 추출하는 함수
+xpathSApply(doc, path, fun)
+# fun : xmlValue, xmlGetAttr, xmlAttrs
+
+```
+
+
+
+## 4. `httr` 패키지의 주요 함수
+
+```R
+# GET으로 사이트 내용 가져오기
+http.standard <- GET(url)
+title2 = html_nodes(read_html(http.standard), css)
+title2 = html_text(title2)
+
+# POST로 사이트 내용 가져오기
+data = POST(url, query = list(code = my_otp),
+add_headers(referer = otp_url)) 
+```
+
+
+
