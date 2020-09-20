@@ -15,7 +15,8 @@
     - [패키지](R/200915_package.md)
     - [정적 크롤링](R/200916_static_crawling.md)
     - [영화 댓글 크롤링](R/200916_daummovie.md)
-
+    - [동적 크롤링](R/200920_dynamic_crawling.md)
+    - [정규표현식](R/200920_regix.md)
 
 - git / github
     - [마크다운](git/00_markdown_basic.md)
