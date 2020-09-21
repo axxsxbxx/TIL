@@ -12,7 +12,7 @@
 - Selenium 서버를 사용하면 제어되는 브라우저에 페이지를 랜더링 해놓고 랜더링된 결과에서 컨텐츠를 읽어올 수 있음
 - 컨텐츠 내에 클릭 이벤트를 발생할 수도 있으며 로그인과 같은 데이터를 입력하는 것도 가능
 
-> ### selenium 서버 기동 과정
+> ### selenium 서버 기동 과정 <!-- {docsify-ignore} -->
 > 1) selenium-server-standalone-master.zip, chromedriver.exe 를 복사한다.
 >
 > 2) 적당한 디렉토리에 selenium-server-standalone-master.zip 파일의 압축을 푼다
