@@ -30,7 +30,7 @@
 
 
 
-## 2. MariaDB 접속
+## 2. `MariaDB` 접속
 
 ```R
 library(rJava)
