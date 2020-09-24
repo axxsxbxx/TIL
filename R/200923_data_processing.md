@@ -82,8 +82,79 @@ strptime("날짜 및 시간 문자열", format="포맷")
 strptime('2019-08-21 14:10:30', "%Y-%m-%d %H:%M:%S")
 
 # as.POSIXct()
+# 1970년 1월 1일 이후 경과된 초의 개수를 숫자 벡터 형식으로 저장함
+> t<-Sys.time()
+> ct<-as.POSIXct(t)
+> ct
+[1] "2020-09-24 20:57:03 KST"
+> unclass(ct) 
+[1] 1600948623
+> as.POSIXct(1449894438,origin="1970-01-01")
+[1] "2015-12-12 13:27:18 KST"
 
 # as.POSIXlt()
+# 날짜 및 시간 요소를 리스트 형식으로 저장함
+> lt<-as.POSIXlt(t)
+> lt
+[1] "2020-09-24 20:57:03 KST"
+> unclass(lt) 
+$sec
+[1] 3.267249
+
+$min
+[1] 57
+
+$hour
+[1] 20
+
+$mday
+[1] 24
+
+$mon
+[1] 8
+
+$year
+[1] 120
+
+$wday
+[1] 4
+
+$yday
+[1] 267
+
+$isdst
+[1] 0
+
+$zone
+[1] "KST"
+
+$gmtoff
+[1] 32400
+
+attr(,"tzone")
+[1] ""    "KST" "KDT"
+
+# 날짜 및 시간에서의 연산
+> as.Date("2020/01/01 08:00:00") - as.Date("2020/01/01 05:00:00")
+Time difference of 0 days
+> as.POSIXct("2020/01/01 08:00:00") - as.POSIXct("2020/01/01 05:00:00")
+Time difference of 3 hours
+> as.POSIXlt("2020/01/01 08:00:00") - as.POSIXlt("2020/01/01 05:00:00")
+Time difference of 3 hours
+
+> d <- as.Date("2020-12-31")
+> d + 7
+[1] "2021-01-07"
+> d + 1:7
+[1] "2021-01-01" "2021-01-02" "2021-01-03" "2021-01-04" "2021-01-05" "2021-01-06" "2021-01-07"
+> weekdays(d + 1:7)
+[1] "금요일" "토요일" "일요일" "월요일" "화요일" "수요일" "목요일"
+
+> start <- as.Date("2021-01-01")
+> end <- as.Date("2021-01-31")
+# by에 day, week, mongth를 인수로 지정할 수 있음
+> seq(from=start, by=1, length.out=7)
+[1] "2021-01-01" "2021-01-02" "2021-01-03" "2021-01-04" "2021-01-05" "2021-01-06" "2021-01-07"
 
 # 기타함수
 weekdays("날짜 및 시간 문자열")		# 요일
@@ -108,6 +179,41 @@ unclass("날짜 및 시간 문자열")		# 1970-01-01 기준으로 얼마나 지�
 ## 3. `문자열 처리` 함수
 
 ```R
+# 텍스트가 몇 개의 문자로 구성되어 있는지 확인
+# 공백도 하나의 문자로 취급함
+# 벡터에 적용 하면 개별 텍스트 원소의 문자 개수를 알 수 있음
+nchar()
 
+# 문자 벡터의 벡터 길이(원소의 개수) 확인
+length()
+
+# 텍스트 벡터 정렬
+# decreasing=TRUE는 내림차순 정렬
+sort(text, decreasing=T|F)
+
+# 소문자 또는 대문자로 일괄 변경
+tolower()
+toupper()
+
+# 특정 위치에 있는 문자열 추출
+substr(text, start, end)
+substring(text, start)  # start 이후의 모든 문자열 추출
+# 응용
+countries <- c("Korea, KR", "United States, US", 
+               "China, CN")
+substr(countries, nchar(countries)-1, nchar(countries))
+
+# 텍스트 분할 결과를 리스트 형식으로 출력
+strsplit(text, 구분자)
+# 결과 벡터 형식으로 출력
+unlist(strsplit(text, 구분자))
+
+# 중복되지 않는 단어 추출
+# 먼저 소문자 혹은 대문자로 변경해야함. R은 대소문자를 구분하기 때문
+unique()
+
+# 텍스트 결합
+# collapse 인수는 텍스트 결합을 통해 생성된 텍스트들을 다시 하나로 연결
+paste()
 ```
 

@@ -19,6 +19,7 @@
     - [정규표현식](R/200920_regex.md)
     - **데이터 분석**
     - [MariaDB](R/200922_MariaDB.md)
+    - [데이터 전처리](R/200923_data_processing.md)
 
 - git / github
     - [마크다운](git/00_markdown_basic.md)
