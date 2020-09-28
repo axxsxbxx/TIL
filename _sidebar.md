@@ -22,6 +22,7 @@
     - [데이터 전처리](R/200923_data_processing.md)
     - [기본 시각화](R/200924_basic_visualization.md)
     - [dplyr 패키지](R/200925_dplyr.md)
+    - [텍스트 마이닝](R/200928_textmining.md)
 
 - git / github
     - [마크다운](git/00_markdown_basic.md)
