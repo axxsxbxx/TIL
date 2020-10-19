@@ -24,6 +24,11 @@
     - [dplyr 패키지](R/200925_dplyr.md)
     - [텍스트 마이닝](R/200928_textmining.md)
 
+- **:snake: PYTHON**
+    - **pandas**
+    - [시리즈](python/201019_series.md)
+    - [데이터프레임](python/201019_dataframe.md)
+
 - git / github
     - [마크다운](git/00_markdown_basic.md)
     - [CLI](git/01_CLI.md)
