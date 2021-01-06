@@ -7,11 +7,3 @@
 
 - 매일 배운 것들을 정리하는 곳입니다.
 
-## :link: LIST <!-- {docsify-ignore} -->
-
-#### - **git / github**
-
-> [마크다운](git/00_markdown_basic.md)
->
-> [CLI](git/01_CLI.md)
-
