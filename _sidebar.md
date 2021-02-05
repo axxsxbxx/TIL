@@ -28,6 +28,20 @@
     - **pandas**
     - [시리즈](python/201019_series.md)
     - [데이터프레임](python/201019_dataframe.md)
+    - **grammar**
+    - [숫자형](python/210111_number.md)
+    - [문자열1](python/210111_string1.md)
+    - [문자열2](python/210112_string2.md)
+    - [리스트&튜플](python/210113_list_tuple.md)
+    - [딕셔너리](python/210114_dict.md)
+    - [셋](python/210114_set.md)
+    - [조건문](python/210115_conditional.md)
+    - [반복문](python/210116_loop.md)
+    - [함수1](python/210117_function.md)
+    - [함수2](python/210117_function2.md)
+    - [함수3](python/210118_function3.md)
+    - [예외처리](python/210119_exception.md)
+    - [알고리즘 팁](python/tip.md)
 
 - git / github
     - [마크다운](git/00_markdown_basic.md)
